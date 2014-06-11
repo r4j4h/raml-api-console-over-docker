@@ -7,12 +7,8 @@ Setting up the Server
 After pulling down the repo:
 
 1. `docker build -t apiconsole .` or `make build-image`
-2. `docker run -it -p 9013:9013 -p 35730:35730 apiconsole /bin/bash` or `make run-container`
-3. `cd /usr/local/api-designer`
-4. `bower install --allow-root`
-5. Type `n` to reporting usage stats for bower
-6. Type `3` to confirm package ambiguity for angular.js
+2. `docker run -it -p 9000:9000 -p 8080:8080 apiconsole /bin/bash` or `make run-container`
+3. `cd /usr/local/api-console`
 7. `grunt-server`
 8. Press `CTRL+P` then `CTRL+Q` to detach from running docker
-9. Connect via port 9013 in a browser
-
+9. Connect via port 9000 in a browser
