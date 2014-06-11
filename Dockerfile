@@ -27,5 +27,7 @@ RUN bootstrap.sh
 
 WORKDIR /usr/local/api-console
 
-EXPOSE 9013
-EXPOSE 35730
+# API Console
+EXPOSE 9000
+# Karma
+EXPOSE 8080
